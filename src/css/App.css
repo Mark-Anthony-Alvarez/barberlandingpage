@@ -1,0 +1,202 @@
+@import "_reset.css";
+
+#root {
+  overflow: hidden;
+}
+
+/******************************* HEADER HEADER HEADER ******************************/
+
+#Header {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+55,6d0019+100 */
+  background: rgb(169, 3, 41); /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    rgba(169, 3, 41, 1) 0%,
+    rgba(143, 2, 34, 1) 55%,
+    rgba(109, 0, 25, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(169, 3, 41, 1) 0%,
+    rgba(143, 2, 34, 1) 55%,
+    rgba(109, 0, 25, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(169, 3, 41, 1) 0%,
+    rgba(143, 2, 34, 1) 55%,
+    rgba(109, 0, 25, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 */
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+#Header h3 {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px;
+  float: left;
+}
+
+#Header nav {
+  float: right;
+}
+
+#Header .Header a .fa {
+  display: none;
+  color: black;
+  float: right;
+}
+
+#Header a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+#Header .fa {
+  display: none !important;
+}
+
+#Header .Header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/******************************* JUMBO JUMBO JUMBO ******************************/
+#MainJumbo {
+  margin-top: 60px;
+}
+
+#MainJumbo .imageBackground {
+  background-image: url("../images/barberjumbo.jpg");
+  background-size: contain;
+  height: 74.2vh;
+  opacity: 0.3;
+}
+
+#MainJumbo .jumboTitle {
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/******************************* MAP MAP MAP MAP  ******************************/
+
+#MapSection {
+  width: auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#MapSection .social-icons {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#MapSection a {
+  margin: 0 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+#MapSection .schedule {
+  padding: 20px;
+  text-align: center;
+}
+
+#MapSection .SeeMe {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#MapSection .schedule p {
+  margin: 20px 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  html body {
+    width: 100%;
+  }
+  html #Header .Header {
+    width: 100%;
+  }
+
+  #Header .menu {
+    display: none;
+    width: 100%;
+  }
+
+  #Header h3 {
+    float: left !important;
+    margin-left: 0;
+  }
+
+  #Header .Header a {
+    display: inline;
+  }
+
+  #Header .Header nav {
+    float: none;
+  }
+  #Header .Header nav a {
+    background-color: gray;
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 0.8rem;
+  }
+
+  #Header .Header a .fa {
+    display: inline !important;
+    color: black;
+    padding: 20px;
+    float: right !important;
+  }
+
+  #MainJumbo .jumboContainer .imageBackground {
+    background-image: url("../images/barberjumbo.jpg");
+    background-size: contain;
+    height: 31.6vh;
+  }
+
+  #MainJumbo .jumboContainer .jumboTitle {
+    font-size: 1.2rem;
+  }
+
+  #MapSection {
+    width: auto;
+    text-align: center;
+    margin-top: 60px;
+  }
+  #MapSection iframe {
+    max-width: 300px !important;
+    width: 100%;
+    text-align: center;
+  }
+  #MapSection .schedule {
+    width: auto;
+    text-align: center;
+  }
+}
