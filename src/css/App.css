@@ -83,15 +83,32 @@
 #MainJumbo .imageBackground {
   background-image: url("../images/barberjumbo.jpg");
   background-size: contain;
-  height: 74.2vh;
+  height: 69.7vh;
   opacity: 0.3;
 }
-
+#MainJumbo .jumboDescription,
+#MainJumbo .jumboTitle {
+  background-color: lightcyan;
+  opacity: 0.5;
+}
 #MainJumbo .jumboTitle {
   font-weight: 600;
   font-size: 2.5rem;
   text-align: center;
   padding: 20px 0;
+  top: -200px;
+  position: relative;
+  text-shadow: 1px 1px #ff0000;
+}
+
+#MainJumbo .jumboDescription {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px 0;
+  top: -200px;
+  position: relative;
+  text-shadow: 1px 1px #ff0000;
 }
 
 /******************************* MAP MAP MAP MAP  ******************************/
@@ -181,8 +198,24 @@
     height: 31.6vh;
   }
 
-  #MainJumbo .jumboContainer .jumboTitle {
+  #MainJumbo .jumboTitle {
+    font-weight: 600;
     font-size: 1.2rem;
+    text-align: center;
+    padding: 20px 0;
+    top: -150px;
+    position: relative;
+    text-shadow: 1px 1px #ff0000;
+  }
+
+  #MainJumbo .jumboDescription {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 20px 0;
+    top: -150px;
+    position: relative;
+    text-shadow: 1px 1px #ff0000;
   }
 
   #MapSection {
